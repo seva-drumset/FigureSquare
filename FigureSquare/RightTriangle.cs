@@ -4,10 +4,10 @@ namespace FigureSquare
 {
     public class RightTriangle : IFigureSquare
     {
-        private double Cathetus1 { get; }
-        private double Cathetus2 { get; }
+        public double Cathetus1 { get; private set;}
+        public double Cathetus2 { get; private set;}
 
-        private double Hypotenuse
+        public double Hypotenuse
         {
             get { return Math.Sqrt(Cathetus1 * Cathetus1 + Cathetus2 * Cathetus2); }
         }
